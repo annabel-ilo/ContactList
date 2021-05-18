@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/contactsDB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            app:cardCornerRadius="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/ic_baseline_contact_phone_24"
+                    android:padding="3sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Contact Dashboard"
+                    android:textSize="30sp"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:padding="14sp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:rowCount="2"
+            android:columnCount="2"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/family"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="4"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="10sp"
+
+                >
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:padding="3sp"
+                    android:src="@drawable/ic_baseline_people_outline_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Family"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:textColor="#000"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/friends"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="10sp"
+
+                >
+                <ImageView
+                    android:layout_width="41sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="right"
+                    android:padding="3sp"
+                    android:src="@drawable/ic_baseline_people_outline_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friends"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:textColor="#000"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/work"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="10sp"
+
+                >
+                <ImageView
+                    android:layout_width="41sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="right"
+                    android:padding="3sp"
+                    android:src="@drawable/ic_baseline_work_24"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Work"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:textColor="#000"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mentors"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="10sp"
+
+                >
+
+                <ImageView
+                    android:src="@drawable/ic_baseline_library_books_24"
+                    android:layout_width="41sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="right"
+                    android:padding="3sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mentors"
+                    android:textSize="40sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:textColor="#000"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
